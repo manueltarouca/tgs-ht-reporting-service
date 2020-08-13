@@ -1,0 +1,52 @@
+[
+    {
+        "deviceId" : "store_cam_01_bertrand",
+        "latitude" : 40.643053,
+        "longitude" : -7.911894
+    },
+    {
+        "deviceId" : "store_cam_02_aki",
+        "latitude" : 40.674012,
+        "longitude" : -7.920833
+    },
+    {
+        "deviceId" : "store_cam_03_staples",
+        "latitude" : 40.674010,
+        "longitude" : -7.914139
+    },
+    {
+        "deviceId" : "store_cam_04_decorplantas",
+        "latitude" : 40.640740,
+        "longitude" : -7.918389
+    },
+    {
+        "deviceId" : "store_cam_05_interdesign",
+        "latitude" : 40.648531,
+        "longitude" : -7.911287
+    },
+    {
+        "deviceId" : "store_cam_06_dmauto",
+        "latitude" : 40.661137,
+        "longitude" : -7.916446
+    },
+    {
+        "deviceId" : "store_cam_07_ahorta",
+        "latitude" : 40.654131,
+        "longitude" : -7.919131
+    },
+    {
+        "deviceId" : "store_cam_08_computoviseu",
+        "latitude" : 40.650525,
+        "longitude" : -7.917315
+    },
+    {
+        "deviceId" : "store_cam_09_formatc",
+        "latitude" : 40.646266,
+        "longitude" : -7.912457
+    },
+    {
+        "deviceId" : "store_cam_10_cavelusa",
+        "latitude" : 40.642678,
+        "longitude" : -7.908680
+    }
+]
