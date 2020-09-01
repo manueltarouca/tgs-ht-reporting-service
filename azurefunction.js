@@ -2,11 +2,11 @@ module.exports = function (context, myBlob) {
     context.log('Function triggered!');
     var predictionUrl = process.env.PREDICTION_URL;
     var predictionKey = process.env.PREDICTION_KEY;
-    var storageConnectionString = process.env.estgv16095_STORAGE;
+    var storageConnectionString = process.env.tgsstorepoc_STORAGE;
     var databaseUserName = process.env.DATABASE_USER_NAME;
     var databasePassword = process.env.DATABASE_PASSWORD;
-    var databaseServer = 'tgspoc.database.windows.net';
-    var databaseName = 'store';
+    var databaseServer = 'tgsserverpoc.database.windows.net';
+    var databaseName = 'tgsdb';
 
     var storage = require('azure-storage');
     var blobService = storage.createBlobService(storageConnectionString);
