@@ -18,7 +18,7 @@
 }
 ```
 
-ACCOUNT_NAME="tgsstorepoc"
+``ACCOUNT_NAME="tgsstorepoc"``
 
 ``az storage account create --name $ACCOUNT_NAME --resource-group tgs-store --location westeurope --sku Standard_LRS``
 
