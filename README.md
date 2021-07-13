@@ -2,7 +2,7 @@
  Human tracking reporting service implementation on Microsoft Azure
 
 
-az group create --name tgs-store --location westeurope
+``az group create --name tgs-store --location westeurope``
 
 ```
 {
@@ -20,7 +20,7 @@ az group create --name tgs-store --location westeurope
 
 ACCOUNT_NAME="tgsstorepoc"
 
-az storage account create --name $ACCOUNT_NAME --resource-group tgs-store --location westeurope --sku Standard_LRS
+``az storage account create --name $ACCOUNT_NAME --resource-group tgs-store --location westeurope --sku Standard_LRS``
 
 
 ```
@@ -97,7 +97,7 @@ az storage account create --name $ACCOUNT_NAME --resource-group tgs-store --loca
 ```
 
 
-az storage container create --name photos --account-name $ACCOUNT_NAME
+``az storage container create --name photos --account-name $ACCOUNT_NAME``
 
 ```
 There is no credential provided in your command and environment, we will query account key for your storage account.
@@ -108,7 +108,7 @@ Setting corresponding environment variable can avoid inputting credential in you
 }
 ```
 
-az storage account keys list --account-name $ACCOUNT_NAME
+``az storage account keys list --account-name $ACCOUNT_NAME``
 
 ```
 [
@@ -125,7 +125,7 @@ az storage account keys list --account-name $ACCOUNT_NAME
 ]
 ```
 
-npm init -y
+``npm init -y``
 
 ```
 Wrote to /home/david/package.json:
@@ -145,7 +145,7 @@ Wrote to /home/david/package.json:
 
 ```
 
-npm install azure-storage --save
+``npm install azure-storage --save``
 
 ```
 npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
@@ -159,9 +159,9 @@ added 66 packages from 95 contributors and audited 66 packages in 16.303s
 found 0 vulnerabilities
 ```
 
-vi cameras.json
+``vi cameras.json``
 
-cat cameras.json
+``cat cameras.json``
 
 ```
 [
@@ -217,12 +217,12 @@ cat cameras.json
     }
 ]
 ```
-vi run.js
+``vi run.js``
 
-cat run.js
+``cat run.js``
 
-export ACCOUNT_NAME="tgsstorepoc"
-export ACCOUNT_KEY="CENSORED"
+``export ACCOUNT_NAME="tgsstorepoc"``
+``export ACCOUNT_KEY="CENSORED"``
 
 
 If you have an image URL:
@@ -245,13 +245,13 @@ Set Body to : <image file>
 
 
 
-SERVER_NAME="tgsserverpoc"
-ADMIN_USERNAME="tgsuser"
-ADMIN_PASSWORD="CENSORED"
-DATABASE_NAME="tgsdb"
+``SERVER_NAME="tgsserverpoc"``
+``ADMIN_USERNAME="tgsuser"``
+``ADMIN_PASSWORD="CENSORED"``
+``DATABASE_NAME="tgsdb"``
 
 
-az sql server create --name $SERVER_NAME --resource-group tgs-store --location westeurope --admin-user $ADMIN_USERNAME --admin-password $ADMIN_PASSWORD
+``az sql server create --name $SERVER_NAME --resource-group tgs-store --location westeurope --admin-user $ADMIN_USERNAME --admin-password $ADMIN_PASSWORD``
 
 
 ```
@@ -277,7 +277,7 @@ az sql server create --name $SERVER_NAME --resource-group tgs-store --location w
 
 ```
 
-az sql db create --resource-group tgs-store --server $SERVER_NAME --name $DATABASE_NAME --service-objective S0
+``az sql db create --resource-group tgs-store --server $SERVER_NAME --name $DATABASE_NAME --service-objective S0``
 
 
 ```
@@ -367,7 +367,7 @@ GO
 
 Query succeeded: Affected rows: 0Affected rows: 0Affected rows: 0Affected rows: 0
 
-npm install tedious
+``npm install tedious``
 
 ```
 SELECT TOP 20 Id, CameraId, Latitude, Longitude, Url, Timestamp, FORMAT(Timestamp,'MM/dd/yyyy h:mm:ss tt') AS TimestampLabel, IsEmpty FROM dbo.Store ORDER BY Timestamp DESC
